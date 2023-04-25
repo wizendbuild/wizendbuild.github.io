@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebai Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sebai Calendar</h1>
+    <div class="left">
+      <h2>Cost Calculator</h2>
+      <div class="cost-items"></div>
+      <button id="add-cost">Add Cost</button>
+      <div>Total Cost: <span id="total-cost">0</span> gp</div>
+      <button id="refill">Refill</button>
+    </div>
+    <div class="right">
+      <h2>Time Tracker</h2>
+      <div id="clock">
+        <input type="number" id="hours" min="1" max="12">
+        <span>:</span>
+        <input type="number" id="minutes" min="0" max="59">
+        <select id="ampm">
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+      </div>
+      <div id="date">
+        <button id="prev-day">-</button>
+        <span id="current-date"></span>
+        <button id="next-day">+</button>
+      </div>
+      <div id="date-selector">
+        <select id="month-dropdown"></select>
+        <select id="day-dropdown"></select>
+      </div>
+    </div>
+    <div class="bottom">
+      <h2>Notes</h2>
+      <select id="section-dropdown"></select>
+      <button id="add-section">Add Section</button>
+      <textarea id="note-content"></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
